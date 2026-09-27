@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KosFlow - Tambah Pengeluaran</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>KosFlow</h1>
+        <p>Tambah data pengeluaran</p>
+
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="tambah.html">Tambah Pengeluaran</a>
+            <a href="detail.html">Detail Pengeluaran</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Form Tambah Pengeluaran</h2>
+
+            <form>
+
+                <div>
+                    <label for="tanggal">Tanggal Pengeluaran:</label>
+                    <input
+                        type="date"
+                        id="tanggal"
+                        name="tanggal"
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="kategori">Kategori:</label>
+
+                    <select id="kategori" name="kategori">
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="makanan">Makanan</option>
+                        <option value="transportasi">Transportasi</option>
+                        <option value="kebutuhan-kos">Kebutuhan Kos</option>
+                        <option value="hiburan">Hiburan</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="jumlah">Jumlah Pengeluaran:</label>
+                    <input
+                        type="number"
+                        id="jumlah"
+                        name="jumlah"
+                        placeholder="Contoh: 25000"
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="keterangan">Keterangan:</label>
+
+                    <textarea
+                        id="keterangan"
+                        name="keterangan"
+                        rows="5"
+                        cols="40"
+                        placeholder="Masukkan keterangan pengeluaran"
+                    ></textarea>
+                </div>
+
+                <br>
+
+                <div>
+                    <button type="submit">Simpan Pengeluaran</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KosFlow</p>
+    </footer>
+
+</body>
+</html>
