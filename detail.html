@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KosFlow - Detail Pengeluaran</title>
 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-light">
 
     <header>
         <h1>KosFlow</h1>
         <p>Detail transaksi pengeluaran</p>
 
-        <nav>
-            <a href="index.html">Beranda</a>
-            <a href="tambah.html">Tambah Pengeluaran</a>
-            <a href="detail.html">Detail Pengeluaran</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded p-2">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">KosFlow</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <div class="navbar-nav ms-auto">
+
+                        <a class="nav-link" href="index.html">Beranda</a>
+                        <a class="nav-link" href="tambah.html">Tambah Pengeluaran</a>
+                        <a class="nav-link active" href="detail.html">Detail Pengeluaran</a>
+
+                    </div>
+                </div>
+            </div>
+
         </nav>
     </header>
 
-    <main>
+    <main class="container py-4">
 
-        <article>
-            <h2>Detail Pengeluaran</h2>
+        <article class="card shadow-sm border-0 p-4">
+            <h2 class="fw-bold mb-4">Detail Pengeluaran</h2>
 
-            <section>
-                <h3>Informasi Transaksi</h3>
+            <section class="mb-4">
+                <h3 class="h5 fw-bold">Informasi Transaksi</h3>
 
                 <p><strong>Tanggal:</strong> 27 September 2026</p>
 
@@ -38,21 +60,19 @@
                 <p><strong>Jumlah:</strong> Rp25.000</p>
             </section>
 
-            <section>
-                <h3>Catatan</h3>
+            <section class="mb-4">
+                <h3 class="h5 fw-bold">Catatan</h3>
 
                 <p>
                     Pengeluaran untuk makan malam di sekitar kos.
                 </p>
             </section>
 
-            <section>
-                <h3>Bukti Transaksi</h3>
+            <section class="mb-4">
+                <h3 class="h5 fw-bold">Bukti Transaksi</h3>
 
-                <img
-                    src="https://via.placeholder.com/250"
-                    alt="Contoh bukti transaksi pembelian makanan"
-                >
+                <img src="https://via.placeholder.com/250" alt="Contoh bukti transaksi pembelian makanan"
+                    class="img-fluid rounded">
             </section>
 
         </article>
@@ -63,5 +83,8 @@
         <p>&copy; 2026 KosFlow</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
